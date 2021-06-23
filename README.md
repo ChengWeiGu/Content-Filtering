@@ -10,4 +10,4 @@ command: python content_filtering.py
 => third step: do vectorization and similarity to recommend top-10 restaurants  
 => Before doing recommendation, user need to input query  
 
-![image](https://github.com/ChengWeiGu/Content-Filtering/results.PNG)  
+![image](https://github.com/ChengWeiGu/Content-Filtering/blob/main/results.PNG)  
