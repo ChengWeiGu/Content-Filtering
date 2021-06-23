@@ -1,5 +1,4 @@
 # coding=utf-8
-# https://github.com/nikitaa30/Content-based-Recommender-System/blob/master/recommender_system.py
 import pandas as pd
 import numpy as np
 import json
@@ -54,7 +53,7 @@ def file2csv():
     pd.DataFrame({'id':id_list, 'name':name_list, 'description_orig':description_orig_list, 'description':description_list}).to_csv('tripadvisor_data.csv',index = False, encoding='utf-8-sig')
 
 
-# use self-self similarity to rank restaurants
+# use self-self similarity to rank restaurants: index searching
 def main_self_rank():
     
     def get_item_name(id):
@@ -109,7 +108,7 @@ def chinese_preprocess(input_str):
         
 
 
-# use input string to rank restaurant 
+# use input string to rank restaurant: query searching
 def main_input_rank():
     
     def get_item_name(id):
